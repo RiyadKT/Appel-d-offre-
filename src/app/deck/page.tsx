@@ -103,48 +103,6 @@ const SLIDES = [
     ],
     footnote: "Un seul AO gagné rembourse 2 ans d'abonnement.",
   },
-  {
-    id: 9, layout: "simplepricing",
-    tag: "Tarifs",
-    title: "Simple.\nTransparent.\nSans surprise.",
-    installation: {
-      label: "Installation",
-      price: "1 500 €",
-      type: "paiement unique",
-      features: [
-        "Intégration à votre profil entreprise",
-        "Configuration des alertes secteur / région",
-        "Formation & prise en main (demi-journée)",
-        "Bibliothèque documentaire initialisée",
-      ],
-    },
-    monthly: {
-      label: "Abonnement mensuel",
-      price: "299 €",
-      type: "/ mois",
-      features: [
-        "Veille automatique 24/7 — toutes sources",
-        "Génération IA illimitée (mémoires, DC1/DC2…)",
-        "Alertes email + Slack",
-        "Support inclus + mises à jour continues",
-      ],
-    },
-    footnote: "Retour sur investissement dès le 1er marché gagné.",
-  },
-  {
-    id: 10, layout: "cta_deal",
-    tag: "La proposition",
-    title: "Votre solution\nà 0 €\navec Nerolia.",
-    subtitle: "Le premier mois est offert. On installe, on configure, on vous forme.",
-    offer: [
-      { label: "Installation offerte",    value: "1 500 € de valeur" },
-      { label: "Premier mois offert",     value: "299 € de valeur" },
-      { label: "Accompagnement 30 jours", value: "Dédié et inclus" },
-    ],
-    cta: "On en discute ?",
-    contact: "contact@nerolia.fr",
-    href: "/dashboard",
-  },
 ];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -585,8 +543,6 @@ function renderSlide(slide: (typeof SLIDES)[number]) {
     case "comparison":  return <SlideComparison s={slide} />;
     case "metrics":     return <SlideMetrics s={slide} />;
     case "personas":    return <SlidePersonas s={slide} />;
-    case "pricing":        return <SlidePricing s={slide} />;
-    case "simplepricing":  return <SlideSimpricePricing s={slide} />;
     case "cta_deal":       return <SlideCtaDeal s={slide} />;
     case "closing":        return <SlideClosing s={slide} />;
     default:               return null;

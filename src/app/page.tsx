@@ -31,7 +31,6 @@ export default function Home() {
         <div className="flex items-center gap-5">
           <Link href="/dashboard" className="text-sm text-gray-500 hover:text-gray-900">Dashboard</Link>
           <Link href="/profile"   className="text-sm text-gray-500 hover:text-gray-900">Profil</Link>
-          <Link href="/pricing"   className="text-sm text-gray-500 hover:text-gray-900">Tarifs</Link>
           <Link href="/deck"      className="text-sm text-gray-500 hover:text-gray-900">Présentation</Link>
           <Link href="/dashboard" className="text-sm text-white px-4 py-2 rounded-xl font-semibold" style={{ background: `linear-gradient(135deg, ${G}, ${GL})` }}>
             Voir la démo
